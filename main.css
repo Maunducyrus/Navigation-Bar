@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+div.menu-bar{
+background-color: green;
+text-align: center;
+}
+ul#page-1{
+    display:inline-flex;
+    list-style: none;
+    color: #fff;
+}
+#page-1 li{
+    width: 120px;
+    padding: 15px;
+    margin: 15px;
+}
+#page-1 li a{
+    text-decoration: none;
+    color: #fff;
+}
+ body{
+    background-image: url("C:\Users\MAUNDU CYRUS\Pictures\weds.jpg");
+    background-size: cover;
+    background-position: center; 
+    font-family: sans-serif;
+} 
+li.active, .menu-bar ul#page-1 li :hover
+{
+background: #2bab0b;
+border-radius: 3px;
+}
+ul#page-1 .fa{
+margin-right: 8px;
+}
+.sub-menu-1{
+    display: none;
+}
+#page-1 li .menu-bar ul#page-1 li :hover .sub-menu-1{
+display: block;
+position: absolute;
+background: rgb(0, 100, 0);
+margin-top: 15px;
+margin-left: -15px;
+}
+#page-1 li .menu-bar ul#page-1 li :hover .sub-menu-1 ul#page-1{
+    display: block;
+    margin: 10px;
+}
+#page-1 li .menu-bar ul#page-1 li :hover .sub-menu-1 ul#page-1 li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff ;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+#page-1 li .menu-bar ul#page-1 li :hover .sub-menu-1 ul#page-1 li:last-child{
+    border-bottom: none;
+}
+#page-1 li .menu-bar ul#page-1 li :hover .sub-menu-1 ul#page-1 li a:hover{
+    color: #b2ff00;
+}
+.fa-angle-right{
+float: right;
+}
+.sub-menu-2{
+    display: none;
+}
+.hover-me:hover .sub .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: -140px;
+    margin-left: 140px;
+    background: rgb(120,45,45);
+}
